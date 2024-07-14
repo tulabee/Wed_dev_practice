@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochi Donuts 😋</title>
+    <style>
+     body {
+        background-color: #fcf8f3;
+        font-family: "Arvo", serif;
+     }
+     
+     ul {
+      list-style: none;
+      color: black;
+      padding: 0;
+      text-align: right;
+     }
+     li {
+      display: inline-block;
+      cursor: pointer;
+      margin: 0 15px;
+     }
+     .recipeprint{
+        color: #557669;
+        text-decoration: none;
+     }
+     .supplies{
+        color:#557669;
+        text-decoration: none;
+     }
+     .container{
+        background: linear-gradient(113.5deg, rgb(234, 234, 234) 22.3%, rgb(201, 234, 211) 56.6%, rgb(255, 180, 189) 90.9%);
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #ff007b;
+        border: 2px solid #557669;
+        padding: 15px;
+        font-size: 48px;
+        border-radius: 4px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #3f3b3b;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20px 0 10px;
+        color: #3f3b3b
+      }
+      .pic1 {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        border-radius: 10px;
+      }
+      .pic2{
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        border-radius: 10px;
+      }
+      .recipe{
+        font-size: 12px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background:  #ff007b;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      .footer{
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+<ul>
+    <li>
+        <a href="https://zhangcatherine.com/baked-mochi-donuts/print/2993/"
+        target="_blank"
+        class="recipeprint"
+        >
+            RECIPE GUIDE
+        </a> 
+    </li>
+    <li>
+        <a
+        href="https://www.hmart.com/"
+        target="_blank"
+        class="supplies"
+      >
+       SUPPLIES
+      </a>
+    </li>
+</ul>
+<div class="container">
+      <h1>Mochi Donuts</h1>
+      <h2>Discover your new guilty pleasure!</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/848/original/oh_mochi.jpeg?1720760883"
+        alt="Oh Mochi"
+        class = "pic1"
+      />
+      <p>
+       <span style = "color:#557669; font-weight: 900"> Mochi Donuts </span> are a fusion of Japanese tradition and modern indulgence. Each bite offers a tantalizing blend of chewy texture and delightful sweetness that's simply irresistible. </br>
+        Pair it with your favorite beverage for an elevated experience. Whether you prefer the robust kick of <strong>coffee</strong> complement its sweetness, the creamy smoothness of a <strong>latte </strong> to balance its texture, or a refreshing cup of <strong>tea</strong> to harmonize its flavors, there's a <em>perfect pairing waiting for you</em>. </br> <span style = "color:#557669; font-weight: 900;">Indulge in a moment of pure satisfaction.</span>
+      </p>
+
+      <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/850/original/love_mochi.jpeg?1720760892"
+      alt="Mochi"
+      class = "pic2"
+      />
+      <a
+        href="https://zhangcatherine.com/baked-mochi-donuts/"
+        target="_blank"
+        class="recipe"
+      >
+    </br>
+        Mochi Donut Recipe
+      </a>
+      <button class="learnmore">Let's try the recipe! 😊</button>
+      <p class="footer">
+        This page was built by
+        <a href="https://github.com/tulabee" target="_blank"> Kristina Hayes </a>
+      </p>
+    </div>
+    <script>
+      function tryRecipe() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email with more mochi recipes ☺️!!"
+        );
+      }
+
+      let tryButton = document.querySelector(".learnmore");
+      tryButton.addEventListener("click", tryRecipe);
+    </script>
+  </body>
+</html>
