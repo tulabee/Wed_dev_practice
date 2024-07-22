@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calligraphy ~ My Hobby🖋</title>
+    <style>
+        body {
+            background:#f5f0e8;
+        }
+        h1{
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .content {
+            max-width: 600px;
+            background: #eed690;
+            color: #373640;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #373640;
+            background: #eed690;
+            font-size: 15px;
+            border-radius: 6px;
+            padding: 10px 15px;
+            transition: all 150ms ease-in-out;
+        }
+        button:hover {
+            background: #f5f0e8;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 12px;
+        }
+        .theme-button {
+            font-size: 10px;
+            background: black;
+            color: white;
+            padding: 5 8px;
+        }
+        .theme-button:hover {
+            color: black;
+            background: white;
+        }
+        .cal-intro-pic {
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+        .cal-intro-pic:hover {
+            filter: contrast(50%);
+            transform: scale(1.1);
+        }
+        .grid {
+            margin: 15px 0;
+            display: grid;
+            grid-template-columns: 1.2fr 1.5fr 1.5fr 1fr;
+            grid-gap: 15px;
+        }
+        .grid img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .dark {
+            background: black;
+            color: white; 
+        }
+        .dark .content {
+             background: rgba(255, 255, 255, 0.1);
+        }
+        .dark a {
+            color: #eed690;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-button">Change Theme</button>
+    <div class="content">
+    <h1>Calligraphy</h1>
+    <h2>My favorite hobby!</h2>
+    <a href="https://en.wikipedia.org/wiki/Calligraphy"
+    target="_blank">
+
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/584/original/black_background.jpg?1721533579"
+        alt=""
+        class ="cal-intro-pic"
+        />
+    </a>
+    <div class="grind">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/585/original/exercise.jpg?1721533587"
+    alt=""
+    />
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/587/original/images_%281%29.jpeg?1721533851"
+    alt=""
+    />
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/586/original/4fecedfc7d5b553dcaa985ccf0001246.jpg?1721533840"
+    />
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/589/original/download_%281%29.jpeg?1721533981"
+    alt=""
+    />
+    </div>
+    <p>
+        Calligraphy is a visual art related to writing. It is the design and execution of lettering with a pen, ink brush, or other writing instrument. Contemporary calligraphic practice can be defined as "the art of giving form to signs in an expressive, harmonious, and skillful manner".
+    </p>
+    <button>Learn Calligraphy</button>
+    </div>
+    <footer>
+        <a href="https://github.com/tulabee" target="_blank">Code by Kristina Hayes</a>
+
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        // body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+
+
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
+</body>
+</html>
